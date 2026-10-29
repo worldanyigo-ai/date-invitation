@@ -1,155 +1,220 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#090a10">
-<title>給皮淡仙女的一封邀請</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>給皮淡仙女的情緒充電站</title>
 <style>
-:root{color-scheme:dark;--gold:#e5c98a;--cream:#fff7e8;--muted:#b7b0a4;--panel:rgba(18,19,26,.78)}
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:#090a10;color:var(--cream);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif}
-body{min-height:100svh;overflow-x:hidden;background:radial-gradient(ellipse at 50% 10%,#28202a 0%,#11121a 43%,#07080c 100%)}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(1px 1px at 12% 18%,#fff 50%,transparent 100%),radial-gradient(1px 1px at 80% 23%,#e5c98a 50%,transparent 100%),radial-gradient(2px 2px at 69% 72%,#fff 50%,transparent 100%),radial-gradient(1px 1px at 24% 77%,#fff 50%,transparent 100%),radial-gradient(1px 1px at 91% 58%,#e5c98a 50%,transparent 100%),radial-gradient(1px 1px at 43% 36%,#fff 50%,transparent 100%);}
-main{position:relative;display:grid;place-items:center;min-height:100svh;padding:28px 18px 36px}
-.card{width:min(100%,460px);position:relative;text-align:center;padding:36px 23px 30px;border:1px solid rgba(229,201,138,.35);border-radius:5px;background:linear-gradient(145deg,rgba(28,27,35,.91),var(--panel));box-shadow:0 24px 90px #0008;overflow:hidden}
-.card:before{content:"";position:absolute;inset:8px;border:1px solid rgba(229,201,138,.12);pointer-events:none}
-.eyebrow{letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-size:10px;margin-bottom:26px}
-.ornament{font-size:25px;color:var(--gold);margin-bottom:17px;opacity:.9}
-h1{font-family:Georgia,"Songti TC",serif;font-weight:400;font-size:clamp(31px,8vw,43px);line-height:1.35;letter-spacing:.08em;margin:0 0 12px}
-.name{color:var(--gold)}
-.subtitle{font-family:Georgia,"Songti TC",serif;font-size:15px;letter-spacing:.22em;color:#d7cdbb;margin:0 0 25px}
-.rule{height:1px;width:56px;background:var(--gold);opacity:.7;margin:0 auto 24px}
-.message{font-size:15px;line-height:2;color:#e8e1d5;margin:0 auto 9px;max-width:300px}
-.restaurant{font-size:12px;letter-spacing:.15em;color:var(--gold);margin:0 0 27px}
-.question{font-size:14px;color:#d7d0c4;margin:0 0 18px}
-.buttons{position:relative;display:flex;align-items:center;justify-content:center;gap:13px;min-height:54px;margin:0 auto;width:100%;max-width:320px}
-button{font:inherit;border:0;min-height:47px;border-radius:3px;padding:12px 20px;cursor:pointer;touch-action:manipulation;transition:transform .18s,background .18s,border-color .18s}
-#yes{background:linear-gradient(135deg,#f2dfb2,#c9a45d);color:#19140b;font-weight:700;box-shadow:0 7px 25px #d8b76c2b;flex:1;max-width:175px}
-#yes:active{transform:scale(.97)}
-#no{background:#ffffff08;color:#d6d0c6;border:1px solid #ffffff35;min-width:110px;z-index:2}
-.hint{min-height:18px;margin:18px 0 0;font-size:11px;color:#8f887d;letter-spacing:.04em}
-.foot{font-size:10px;color:#7e776d;letter-spacing:.18em;margin-top:29px}
-.hidden{display:none!important}
-#surprise{animation:appear .9s ease both}
-.big-heart{font-size:42px;color:#e6c98d;margin:8px 0 15px;animation:pulse 1.8s ease-in-out infinite}
-.surprise-title{font-size:31px;line-height:1.5;margin-bottom:12px}
-.surprise-copy{font-size:15px;line-height:2;color:#e8e1d5}
-.small-note{font-size:11px;color:#a69c8b;margin-top:22px;letter-spacing:.08em}
-#again{margin-top:20px;border:1px solid #c9aa6a;background:transparent;color:var(--gold);font-size:12px}
-.confetti{position:fixed;top:-30px;z-index:10;pointer-events:none;animation:fall 3.2s linear forwards;font-size:19px}
-@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
-@keyframes fall{to{transform:translateY(110svh) rotate(380deg);opacity:0}}
-@media(max-height:650px){.card{padding:25px 20px}.eyebrow{margin-bottom:16px}.foot{margin-top:18px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{
+  margin:0;padding:24px 16px 40px;
+  font-family:"Microsoft JhengHei",sans-serif;
+  color:#fff;min-height:100vh;
+  background:radial-gradient(ellipse at top,#554775 0%,#292744 45%,#15182f 100%);
+}
+main{max-width:480px;margin:auto}
+header{text-align:center;padding:20px 0 28px}
+.moon{font-size:48px}
+h1{font-size:27px;line-height:1.5;margin:12px 0}
+p{line-height:1.9}
+.muted{color:#d9d2e8;font-size:14px}
+.card{
+  margin:18px 0;padding:20px;
+  border:1px solid #ffffff20;border-radius:22px;
+  background:#ffffff0c;
+}
+h2{font-size:20px;margin:0 0 10px}
+button,textarea{
+  font:inherit;color:white;
+}
+button{
+  border:1px solid #ffffff35;background:#ffffff12;
+  border-radius:15px;padding:13px 12px;cursor:pointer;
+}
+button:hover{background:#ffffff25}
+button:focus-visible,textarea:focus-visible{
+  outline:2px solid #e3c9ff;outline-offset:3px;
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mood{min-height:86px;font-size:16px}
+.mood span{display:block;font-size:26px;margin-bottom:7px}
+.result{
+  display:none;margin-top:16px;padding:16px;
+  border-radius:16px;background:#0d102855;line-height:1.9;
+}
+textarea{
+  width:100%;padding:12px;border-radius:12px;
+  border:1px solid #ffffff35;background:#15182f;
+  resize:vertical;min-height:90px;
+}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.actions button{flex:1}
+#bubbles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.bubble{font-size:30px;min-height:68px}
+.bubble:disabled{opacity:.55;cursor:default}
+#breath-orb{
+  width:120px;height:120px;margin:24px auto;
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff4ff,#c7a7ff 45%,#8b7bdb);
+  box-shadow:0 0 35px #d4b9ff88;
+  transform:scale(1);
+}
+#breath-text{text-align:center;min-height:30px}
+.center{text-align:center}
+.primary{background:#c6a9f4;color:#251b3b;border:0;font-weight:bold}
+footer{text-align:center;font-size:13px;color:#d4cde1;padding:20px 0}
 </style>
 </head>
 <body>
 <main>
-<section class="card" aria-live="polite">
-  <div id="invitation">
-    <div class="eyebrow">A PRIVATE INVITATION · NO. 001</div>
-    <div class="ornament">✦　❦　✦</div>
-    <h1>致 <span class="name">皮淡仙女</span></h1>
-    <p class="subtitle">一場只屬於我們的約會</p>
-    <div class="rule"></div>
-    <p class="message">找一天好好陪妳，<br>一起吃頓飯 ❤️</p>
-    <p class="restaurant">地點：神祕餐廳 · 保留驚喜</p>
-    <p class="question">仙女大人，願意赴約嗎？</p>
-    <div class="buttons" id="buttonArea">
-      <button id="yes" type="button">欣然赴約　♥</button>
-      <button id="no" type="button">再想一下</button>
-    </div>
-    <p class="hint" id="hint">請選擇妳的答案。</p>
-    <div class="foot">WITH LOVE · JUST FOR YOU</div>
+<header>
+  <div class="moon">🌙</div>
+  <h1>給皮淡仙女的<br>情緒充電站</h1>
+  <p>辛苦了，先來這裡休息一下。<br>我們不用一次解決所有事情。</p>
+  <p class="muted">現在的妳，可以慢慢來。</p>
+</header>
+
+<section class="card">
+  <h2>先停一下，選一個最接近妳的心情。</h2>
+  <p class="muted">沒有正確答案，也可以不知道。</p>
+  <div class="grid">
+    <button class="mood" onclick="chooseMood('angry')"><span>😤</span>煩躁、生氣</button>
+    <button class="mood" onclick="chooseMood('sad')"><span>🥺</span>難過、委屈</button>
+    <button class="mood" onclick="chooseMood('think')"><span>🌪️</span>想太多、停不下來</button>
+    <button class="mood" onclick="chooseMood('quiet')"><span>🌙</span>只想安靜</button>
   </div>
-  <div id="surprise" class="hidden">
-    <div class="eyebrow">THE ANSWER IS BEAUTIFUL</div>
-    <div class="big-heart">♥</div>
-    <h2 class="surprise-title">約會成立！</h2>
-    <p class="surprise-copy">謝謝仙女大人賞臉。<br>餐廳先保密，驚喜交給我準備。<br><br>找一天好好陪妳，<br>把平凡的一餐，變成我們的回憶。❤️</p>
-    <div class="rule" style="margin-top:24px"></div>
-    <p class="small-note">期待和妳見面的那一天。</p>
-    <button id="again" type="button">再看一次邀請</button>
-    <div class="foot">END SCENE · OUR STORY CONTINUES</div>
+  <div id="mood-result" class="result" aria-live="polite"></div>
+</section>
+
+<section class="card">
+  <h2>🧩 慢慢來，一次一件事</h2>
+  <p>不用整理得很完整。寫下一點點就好，也可以不寫。</p>
+  <label for="worry">現在最困擾妳的是什麼？</label>
+  <textarea id="worry" placeholder="例如：我擔心等一下跟家人說了，他會生氣……"></textarea>
+  <p>現在先做哪一步？</p>
+  <div class="grid">
+    <button onclick="smallStep('先分清楚，真正發生了什麼。')">釐清事情</button>
+    <button onclick="smallStep('哪些事情是妳能決定的？先只看這一部分。')">分清能做的事</button>
+    <button onclick="smallStep('想一個小到現在就能做的行動。不必一次完成。')">找一個小行動</button>
+    <button onclick="smallStep('現在累了也沒關係。可以先喝水、坐好，休息一下。')">先休息一下</button>
+  </div>
+  <div id="step-result" class="result" aria-live="polite"></div>
+</section>
+
+<section class="card">
+  <h2>🫧 把煩惱戳破一點點</h2>
+  <p>選一顆泡泡，輕輕點一下。不用趕時間。</p>
+  <div id="bubbles">
+    <button class="bubble" aria-label="戳破泡泡" onclick="popBubble(this)">🫧</button>
+    <button class="bubble" aria-label="戳破泡泡" onclick="popBubble(this)">🫧</button>
+    <button class="bubble" aria-label="戳破泡泡" onclick="popBubble(this)">🫧</button>
+    <button class="bubble" aria-label="戳破泡泡" onclick="popBubble(this)">🫧</button>
+    <button class="bubble" aria-label="戳破泡泡" onclick="popBubble(this)">🫧</button>
+    <button class="bubble" aria-label="戳破泡泡" onclick="popBubble(this)">🫧</button>
+  </div>
+  <p id="bubble-message" class="center" aria-live="polite">慢慢來，今天不需要一次解決所有事情。</p>
+  <div class="center"><button onclick="resetBubbles()">再玩一次 ↻</button></div>
+</section>
+
+<section class="card">
+  <h2>✨ 陪妳慢慢呼吸</h2>
+  <p>看著光球慢慢變大、縮小。舒服就好，不必刻意深呼吸。</p>
+  <div id="breath-orb"></div>
+  <p id="breath-text" aria-live="polite" class="center">準備好了，再開始就好。</p>
+  <div class="actions">
+    <button class="primary" onclick="startBreathing()">開始陪伴</button>
+    <button onclick="stopBreathing()">暫停</button>
   </div>
 </section>
+
+<section class="card center">
+  <h2>給妳的一句話</h2>
+  <p>不用現在就把所有事情想清楚。</p>
+  <p>先處理眼前能處理的一件事。<br>其他的，我們再慢慢來。</p>
+</section>
+
+<footer>妳不用立刻變好。<br>今天先照顧好自己，就已經很好了。</footer>
 </main>
+
 <script>
-(() => {
-  const no = document.getElementById('no');
-  const yes = document.getElementById('yes');
-  const area = document.getElementById('buttonArea');
-  const hint = document.getElementById('hint');
-  const invitation = document.getElementById('invitation');
-  const surprise = document.getElementById('surprise');
-  const again = document.getElementById('again');
-  let attempts = 0;
-  let moved = false;
-  const teasing = ['哎呀，差一點點！','這個答案要不要再考慮一下？','按鈕好像也希望妳答應呢。','仙女大人，真的不再想想嗎？','最後一次機會……才怪！'];
+const moodMessages={
+  angry:["先不要急著處理任何事。","把肩膀放鬆，喝一口水。妳可以生氣，不需要現在就想通。"],
+  sad:["先讓自己有地方休息。","找個舒服的位置坐好。妳不用急著堅強，也不必立刻解釋自己的委屈。"],
+  think:["我們先把事情放慢。","雙腳踩穩地面。現在只需要看眼前的一件事，其他的可以晚點再想。"],
+  quiet:["好，那我們先安靜一下。","不用勉強自己說話。找個安全、舒服的地方休息，準備好了再繼續。"]
+};
 
-  function moveNoButton() {
-    if (surprise.classList.contains('hidden') === false) return;
-    const areaRect = area.getBoundingClientRect();
-    const noRect = no.getBoundingClientRect();
-    const yesRect = yes.getBoundingClientRect();
-    // Keep the button inside the invitation card and away from the yes button.
-    no.style.position = 'absolute';
-    no.style.left = Math.max(0, Math.random() * Math.max(0, areaRect.width - noRect.width)) + 'px';
-    no.style.top = (Math.random() > .5 ? -1 : 1) * (10 + Math.random() * 20) + 'px';
-    const overlapsYes = () => {
-      const r = no.getBoundingClientRect();
-      const y = yes.getBoundingClientRect();
-      return !(r.right < y.left - 8 || r.left > y.right + 8 || r.bottom < y.top - 8 || r.top > y.bottom + 8);
-    };
-    let tries = 0;
-    while (overlapsYes() && tries++ < 8) {
-      no.style.left = Math.max(0, Math.random() * Math.max(0, areaRect.width - noRect.width)) + 'px';
-      no.style.top = (Math.random() > .5 ? -1 : 1) * (14 + Math.random() * 25) + 'px';
-    }
-    attempts++;
-    moved = true;
-    hint.textContent = teasing[Math.min(attempts - 1, teasing.length - 1)];
+function chooseMood(mood){
+  const [title,message]=moodMessages[mood];
+  const box=document.getElementById("mood-result");
+  box.replaceChildren();
+  const heading=document.createElement("h2");
+  heading.textContent=title;
+  const paragraph=document.createElement("p");
+  paragraph.textContent=message;
+  box.append(heading,paragraph);
+  box.style.display="block";
+}
+function smallStep(message){
+  const box=document.getElementById("step-result");
+  box.textContent=message;
+  box.style.display="block";
+}
+function popBubble(button){
+  if(button.disabled)return;
+  button.disabled=true;
+  button.textContent="✨";
+  const remaining=[...document.querySelectorAll(".bubble")].filter(b=>!b.disabled).length;
+  document.getElementById("bubble-message").textContent=
+    remaining===0
+      ?"妳做到了。休息一下也很好，今天辛苦了。"
+      :["很好，先放下一點點就好。","慢慢來，妳不用急著變好。","記得放鬆肩膀。","現在先照顧自己就好。"][Math.floor(Math.random()*4)];
+}
+function resetBubbles(){
+  document.querySelectorAll(".bubble").forEach(button=>{
+    button.disabled=false;
+    button.textContent="🫧";
+  });
+  document.getElementById("bubble-message").textContent="重新開始也沒關係，按照自己的步調來。";
+}
+let breathTimer=null;
+let breathRunning=false;
+let breathPhase=0;
+function startBreathing(){
+  stopBreathing();
+  breathRunning=true;
+  breathPhase=0;
+  runBreathPhase();
+}
+function runBreathPhase(){
+  if(!breathRunning)return;
+  const orb=document.getElementById("breath-orb");
+  const text=document.getElementById("breath-text");
+  const inhale=breathPhase===0;
+  const duration=inhale?4000:6000;
+  text.textContent=inhale?"慢慢吸氣……":"慢慢吐氣……";
+  orb.style.transition="transform "+duration+"ms ease-in-out";
+  orb.style.transform=inhale?"scale(1.3)":"scale(1)";
+  breathTimer=setTimeout(()=>{
+    breathPhase=1-breathPhase;
+    runBreathPhase();
+  },duration);
+}
+function stopBreathing(){
+  breathRunning=false;
+  if(breathTimer!==null){
+    clearTimeout(breathTimer);
+    breathTimer=null;
   }
-
-  no.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') moveNoButton(); });
-  no.addEventListener('pointerdown', (e) => {
-    if (e.pointerType === 'touch' || e.pointerType === 'pen') {
-      e.preventDefault();
-      moveNoButton();
-    }
-  });
-  no.addEventListener('click', (e) => { e.preventDefault(); moveNoButton(); });
-  yes.addEventListener('click', () => {
-    invitation.classList.add('hidden');
-    surprise.classList.remove('hidden');
-    showerHearts();
-  });
-  again.addEventListener('click', () => {
-    surprise.classList.add('hidden');
-    invitation.classList.remove('hidden');
-    no.style.position = '';
-    no.style.left = '';
-    no.style.top = '';
-    attempts = 0;
-    moved = false;
-    hint.textContent = '請選擇妳的答案。';
-  });
-  function showerHearts() {
-    const symbols = ['♥','✦','♡','✧'];
-    for (let i = 0; i < 26; i++) {
-      const el = document.createElement('span');
-      el.className = 'confetti';
-      el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-      el.style.left = Math.random() * 100 + 'vw';
-      el.style.animationDelay = Math.random() * 1.2 + 's';
-      el.style.fontSize = (13 + Math.random() * 17) + 'px';
-      document.body.appendChild(el);
-      el.addEventListener('animationend', () => el.remove(), {once:true});
-    }
+  const orb=document.getElementById("breath-orb");
+  const text=document.getElementById("breath-text");
+  if(orb){
+    orb.style.transition="transform 0.3s ease";
+    orb.style.transform="scale(1)";
   }
-})();
+  if(text)text.textContent="已暫停。照自己的步調來，不用勉強。";
+}
 </script>
 </body>
 </html>
